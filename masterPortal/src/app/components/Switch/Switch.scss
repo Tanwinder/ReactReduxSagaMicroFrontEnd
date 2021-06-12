@@ -1,0 +1,97 @@
+$lightColor: #00B0F2;
+$darkColor: gray;
+.switch-container {
+	position: absolute;
+	top: 66%; left: 68%;
+	-webkit-transform: translate3d(-50%, -31%, 0);
+	transform: translate3d(-50%, -31%, 0);
+}
+
+input[type="checkbox"].switch  {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="checkbox"].switch + div {
+	vertical-align: middle;
+	width: 40px;
+	height: 20px;
+	border-radius: 999px;
+    // background-color: $darkColor;
+    background: linear-gradient(45deg, $darkColor, rgba(255,255,255,.3));
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	-webkit-transition-property: background-color, box-shadow;
+	transition-property: background-color, box-shadow;
+	cursor: pointer;
+}
+
+input[type="checkbox"].switch + div span {
+	position: absolute;
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 12px;
+}
+
+input[type="checkbox"].switch + div span:nth-child( 1 ) {
+    margin-left: 15px;
+}
+
+input[type="checkbox"].switch + div span:nth-child( 2 ) {
+    margin-left: 55px;
+}
+
+input[type="checkbox"].switch:checked + div {
+	width: 60px;
+	background-position: 0 0;
+    // background-color: $darkColor;
+    background: linear-gradient(45deg, $darkColor, rgba(255,255,255,.3));
+}
+
+input[type="checkbox"].switch + div {
+	width: 60px;
+	height: 25px;
+}
+
+
+input[type="checkbox"].switch:checked + div {
+    // background-color: $lightColor;
+    background: linear-gradient(45deg, transparent, $lightColor);
+}
+
+input[type="checkbox"].switch + div > div {
+	float: left;
+	width: 21px; height: 21px;
+	border-radius: inherit;
+    // background: #ffffff;
+    background: transparent;
+	-webkit-transition-timing-function: cubic-bezier(1,0,0,1);
+	transition-timing-function: cubic-bezier(1,0,0,1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	-webkit-transition-property: transform, background-color;
+	transition-property: transform, background-color;
+	pointer-events: none;
+	margin-top: -8px;
+	margin-left: 2px;
+}
+
+input[type="checkbox"].switch:checked + div > div {
+	-webkit-transform: translate3d(20px, 0, 0);
+	transform: translate3d(20px, 0, 0);
+    // background-color: #ffffff;
+    background-color: transparent;
+}
+
+input[type="checkbox"].bigswitch.switch + div > div {
+	width: 44px;
+	height: 44px;
+	margin-top: 1px;
+}
+
+
+input[type="checkbox"].switch:checked + div > div {
+	-webkit-transform: translate3d(35px, 0, 0);
+	transform: translate3d(35px, 0, 0);
+}
+

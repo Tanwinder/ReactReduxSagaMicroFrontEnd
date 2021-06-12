@@ -1,0 +1,19 @@
+{
+  "NODENV_Development": {
+    "app1url": "http://localhost:3000/",
+    "app2url": "http://localhost:3001/"
+  },
+  "ci": {
+    "app1url": "http://localhost:3000/",
+    "app2url": "http://localhost:3001/"
+  },
+  "stage1": {
+    "app1url": "http://localhost:3000/",
+    "app2url": "http://localhost:3001/"
+  },
+  "production": {
+    "app1url": "http://localhost:3000/",
+    "app2url": "http://localhost:3001/"
+  }
+}
+  

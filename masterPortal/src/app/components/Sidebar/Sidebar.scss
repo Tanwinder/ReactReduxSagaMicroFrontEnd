@@ -1,0 +1,31 @@
+.dps-nav-item {
+    &.nav-item {
+        & .nav-link {
+            & .unAuthToolTip{
+                display: none;
+            }
+            // &.active {
+            //     & .unAuthToolTip{
+            //         display: block;
+            //     }
+            // }
+        }
+        &:hover {
+            & .nav-link {
+                & .unAuthToolTip{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+#sidebar-nav-alert {
+    .modal-title {
+        font-size: 1.1vmax;
+    }
+
+    .modal-header .close {
+        font-size: 1.1vmax;
+    }
+}

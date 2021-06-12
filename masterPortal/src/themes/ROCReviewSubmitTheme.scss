@@ -1,0 +1,167 @@
+$white: white;
+$BGWhite: #fff;
+$salmon: #FA8072;
+$textColor: #c8ced3;
+$headerColor: #FFC105;
+$CardBgColor: #3a4149;
+$CardBorderColor:#23282c;
+$darkBackground: #08263a !important;
+$darkBoxShadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+.gray .roc_review_submit {
+        div,table,tr,td,th,input,#allocation-control-date-range{
+            background:#2e2e2e !important;
+            color:$white !important;
+            border-color: #3a4149 !important;
+        }
+        div {
+            &.loading-bar{
+                background-color: #279cdb!important;
+            }
+        }
+        .fas {
+            color: $textColor !important;
+        }
+        div.cell, div.headerCell, div.headerCell div {
+            background: #3a4149 !important;
+            color: #c8ced3!important;
+            border-color: #475561 !important;
+        }
+        .ReactVirtualized__Grid {
+            border: 1px solid #475561!important;
+        }
+        button {
+            color: white!important
+        }
+        .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+            color: $white;
+        }
+        .__react_component_tooltip.type-dark {
+            color: #222!important;
+            background-color: #fff!important;
+        }
+        .__react_component_tooltip.type-dark.place-top:after {
+            border-top-color: #fff!important;
+            border-top-style: solid!important;
+            border-top-width: 6px!important;
+        }
+        .AdCards .AdCardsHeader .AdCards_Heading,
+        .AdCards .AdCardsHeader .AdCards_Button{
+            color:#FFC105 !important;
+        }
+        .Select-value-label{
+            color:$white !important;
+        }
+        .cloudIconStyles{
+            background:none !important;
+        }
+        .app-body{
+                background-color: #2e2e2e !important;
+        }
+        .alert-warning {
+            color: #8a6d3b !important;
+            background-color: #fcf8e3 !important;
+            border-color: #faebcc !important;
+        }
+        .alert-success {
+            color: white !important;
+            // border-color: rgb(43, 224, 149)!important;
+            // background-color: rgb(11, 151, 93)!important;
+            // background: #d4edda !important;
+            background-image: linear-gradient(to bottom,rgb(138, 243, 199) 0,rgb(11, 151, 93) 100%) !important;
+            background-repeat: repeat-x !important;
+            & div {
+                color: white !important;
+                // border-color: rgb(11, 151, 93)!important;
+                // background-color: rgb(11, 151, 93)!important;
+                background-image: linear-gradient(to bottom,rgb(138, 243, 199) 0,rgb(11, 151, 93) 100%) !important;
+                background-repeat: repeat-x !important;
+            }
+        } 
+        .loading-bar{
+            background-color: #279cdb !important;
+        }
+        .AdCards .AdCardsHeader,
+        .loading-bar-container,div.AdCards_Svg div{ 
+            background:#3a4149 !important;
+        }
+        ::-webkit-scrollbar { width: 8px; height: 12px;}
+        ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+        ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+        ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+        ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+        ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+        ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+        ::-webkit-scrollbar-corner { background-color: #666;}
+        ::-webkit-resizer { background-color: #666;}
+    }
+    .graySF .roc_review_submit{
+        div, table,tr,td,th,input,
+        .AdCards_Button,
+        .AdCards_Heading{
+            font-size: 12px !important;
+        }
+    }
+    .grayBF .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 14px !important;
+        }
+    }
+    .grayNC .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.9 !important;
+        }
+    }
+    .grayLC .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.8 !important;
+        }
+    }
+    
+    .white .roc_review_submit{
+        div, table,tr,td,th,input{
+          //  background:$white;
+            color:#000 !important;
+          //  border-color: #c2cfd6;
+        }
+        .AdCards_Button{
+            color:#000 !important;
+        }
+        // .alert {
+        //     border: 1px solid #4771A5 !important;
+        // }
+        // .alert-danger {
+        //     color: #813838 !important;
+        //     background-color: #fee2e1 !important;
+        // }
+        // .red {
+        //     color: red !important;
+        // }
+    }
+    .whiteSF .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 12px !important;
+        }
+    }
+    .whiteBF .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 14px !important;
+        }
+    }
+    .whiteNC .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.9 !important;
+        }
+    }
+    
+    .whiteLC .roc_review_submit{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.8 !important;
+        }
+    }

@@ -1,0 +1,18 @@
+.rocAdmin {
+    .card-header {
+        padding: 5px;
+        background-color: #e4e5e6;
+    }
+    .material-Cards {
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        background-color: #fff;
+    }
+    .card {
+        border: none;
+    }
+    
+    .card-header .btn, .card-header .btn-lg{
+        margin-top: 0px;
+    }
+}

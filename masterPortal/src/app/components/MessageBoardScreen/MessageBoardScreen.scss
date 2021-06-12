@@ -1,0 +1,113 @@
+$fontSize: 1.2rem;
+$boxShadow: 0 0 0px rgba(0, 0, 0, 0.12);
+$borderRadius: 4px;
+$border: 1px solid #c2cfd6;
+
+.message_board {
+    & .card {
+        border: none;
+    }
+    textarea {
+        font-size: 1.2rem;
+    }
+    & .card-header {
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 1px solid #c2cfd6;
+    }
+    & .message_board_actions {
+        & i {
+            font-size: 1.3rem;
+            margin-right: .8rem;
+        }
+    }
+    .table {
+        border: $border;
+        border: none;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 0.75rem;
+        vertical-align: top;
+        border: none;
+        border-top: $border;
+        // border: none;
+    }
+    & .Demand_Cards_Button {
+        padding: 0 12px;
+        overflow: visible;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            color: #4285f4;
+        }
+        & i {
+            transform: rotate(0deg);
+            transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+        & > a {
+            color: rgba(0, 0, 0, 0.54);
+        }
+    }
+    & .Compress {
+        & i {
+            transform: rotate(180deg)
+        }
+    }
+    & .Settings_Button {
+        position: relative;
+        &:hover {
+            &:before {
+                content: "Settings";
+                position: absolute;
+                top: -20px;
+                border: 1px solid gray;
+                left: -5px;
+                color: white;
+                font-size: 11px;
+                padding: 1px 7px;
+                border-radius: 4px;
+                background: gray;    
+            }
+        }
+    }
+    & .Compress {
+        position: relative;
+        &:hover {
+            &:before {
+                content: "Compress";
+                position: absolute;
+                top: -20px;
+                border: 1px solid gray;
+                left: -25px;
+                color: white;
+                font-size: 11px;
+                padding: 1px 7px;
+                border-radius: 4px;
+                background: gray;    
+            }
+        }
+    }
+    & .Expand {
+        position: relative;
+        &:hover {
+            &:before {
+                content: "Expand";
+                position: absolute;
+                top: -20px;
+                border: 1px solid gray;
+                left: -10px;
+                color: white;
+                font-size: 11px;
+                padding: 1px 7px;
+                border-radius: 4px;
+                background: gray;    
+            }
+        }
+    }
+}

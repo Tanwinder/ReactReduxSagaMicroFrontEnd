@@ -1,0 +1,31 @@
+.unAuthToolTip {
+    border: 1px solid gray;
+    width: 232px;
+    padding: 8px 8px 8px 11px;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    position: absolute;
+    background: white;
+    color: red;
+    white-space: pre-wrap;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 38%;
+        left: -20px;
+        border-left: 9px solid transparent;
+        border-right: 10px solid gray;
+        border-bottom: 10px solid transparent;
+        border-top: 9px solid transparent;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 38%;
+        left: -20px;
+        border-left: 11px solid transparent;
+        border-right: 10px solid white;
+        border-bottom: 10px solid transparent;
+        border-top: 9px solid transparent;
+    }
+}

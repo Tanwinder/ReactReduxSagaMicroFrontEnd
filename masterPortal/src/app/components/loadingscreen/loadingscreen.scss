@@ -1,0 +1,94 @@
+.loadingScreen {
+    display: flex;
+    // border: 1px solid gray;
+    flex-direction: column;
+    width: 377px;
+    padding: 10px;
+    height: 85vh;
+    // align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    & img {
+        width: 120px;
+        margin-left: -11px;
+        align-self: center;
+        animation: logo ease .7s forwards;
+        transform-origin: initial;
+    }
+    & .loadingBar {
+        border: 2px solid gray;
+        width: 100%;
+        margin: 6px 0;
+        opacity: 0;
+        transform-origin: left;
+        animation: loadingbar ease .7s forwards;;
+        animation-delay: .5s;
+    }
+    & .loadingContent {
+        opacity: 0;
+        color: darkslategrey;
+        font-size: 28px;
+        font-weight: 600;
+        animation: loadingcontent ease .5s forwards;
+        transform-origin: left;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0) rotate(0)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1) rotate(720deg)
+    }
+}
+@keyframes loadingbar {
+    from {
+        opacity: 0;
+        transform: translateX(0px) scaleX(0)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px) scaleX(1)
+    }
+}
+@keyframes loadingcontent {
+    from {
+        opacity: 0;
+        transform: translateX(0px) scaleX(0)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px) scaleX(1)
+    }
+}
+
+.loader > .app {
+    transform-origin: initial;
+    // animation: appcontent linear .4s forwards;
+}
+@keyframes appcontent {
+    from {
+        // opacity: 0;
+        transform: scale(0)
+    }
+    to {
+        // opacity: 1;
+        transform: scale(1)
+    }
+}
+
+// span {
+//     opacity: 1;
+//     position: relative;
+
+//     @for $i from 1 through 7 {
+//       &:nth-child(#{$i}) {
+//         transform: translate3d(20px * $i, 0, 0);
+//         transition-delay: .1s * (7 - $i);
+//       }
+//     }
+//   }

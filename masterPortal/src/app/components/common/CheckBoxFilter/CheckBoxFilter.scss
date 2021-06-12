@@ -1,0 +1,234 @@
+$input-border-color: #c2cfd6;
+$disabledColor: #f9f9f9;
+// $disabledColor: #f0f3f5;
+.filters {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    font-size: 11px;
+    & .Select-control {
+        background-color: #fff;
+        border-radius: 4px;
+        color: #333;
+        display: table;
+        border-spacing: 0;
+        border-collapse: separate;
+        height: 34px;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        border: 1px solid $input-border-color;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    & .menu-display{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 34px;
+        overflow: hidden;
+        transition: all .3s linear;  
+        min-width: 160px;
+        width: 100%;
+    }
+    & .show-menu {
+        height: 134px;
+        padding: 4px;
+        // border-radius: 4px;
+        border: 1px solid $input-border-color;
+        border-top: transparent;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        z-index: 1;
+    }
+    & .hide-menu {
+        height: 0;
+        border: none;
+    }
+    & .date-filter-menu {
+        min-width: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        & .menu-display {
+            top: 34px;
+        }
+    }
+    & .Select-arrow-zone {
+        // border-left: 1px solid $input-border-color;
+        padding-left: 4px;
+        width: 50px;
+        background: transparent;
+        margin: 0;
+        padding-right: 0;
+    }
+    & .input-val {
+        & label {
+            display: flex;
+            align-items: center;
+            border: 1px solid $input-border-color;
+            width: 100%;
+            height: 100%;
+            & input {
+                border: none;
+            }
+        }
+        & span {
+            padding: 1px 8px;
+            background-color: #fff;
+            font-size: 1.9em;
+            border-right: 1px solid $input-border-color;
+        }
+    }
+    & .last-input-val {
+        margin-top: 6px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 86px;
+            left: 0;
+            background-color: #ddd;
+            width: 100%;
+            height: 1px;
+        }
+    }
+    & .filtered-items{
+        font-size: 1.1em;
+        width: 97%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    & .display-menu-arrow {
+        position: relative;
+        display: inline-block;
+        bottom: -5px;
+        border-top: 5px solid gray;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        &.open {
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid #999;
+            bottom: 0;
+        }
+    }
+    & .Select-placeholder {
+        width: 100%;
+        border: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        color: gray;
+        position: relative;
+        padding: 0 16px;
+        border-bottom: 1px solid #eee;
+        &::placeholder {
+            color: #aaa;
+            font-style: italic;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+    & .Select-placeholder-icon {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: #aaa;
+    }
+    & .Select-multi-value-wrapper {
+        flex: 1 1 100%;
+        max-width: 86%;
+    }
+    & .checkbox-filter {
+        transition: none;
+        &.show-menu {
+            padding: 0;
+            height: auto;
+            max-height: 204px;
+            overflow: auto;
+            z-index: 3;
+        }
+        & .checkbox-val {
+            // border-bottom: 1px solid $input-border-color;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & label {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                position: relative;
+                & input {
+                    position: absolute;
+                    top: 7px;
+                    left: 23px;
+                    &:hover {
+                        & ~ span {
+                            background-color: aliceblue;
+                        }
+                    }
+                    &:checked {
+                        & ~ span {
+                            background-color: aliceblue;
+                        }
+                    }
+                }
+                & span {
+                    width: 100%;
+                    padding: 9px 10px 9px 50px;
+                    font-size: 11px!important;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &.disabled {
+        & .Select-placeholder {
+            background: $disabledColor;
+            cursor: not-allowed;
+        }
+        & .Select-control {
+            background: $disabledColor;
+        }
+        & .Select-arrow-zone {
+            cursor: not-allowed;
+        }
+    }
+    & .selectedItemsNumber {
+        position: relative;
+        font-size: 12px;
+        color: white;
+        padding: 0px 5px;
+        height: auto;
+        border-radius: 9px;
+        background: seagreen;
+    }
+}
+.filterLabel {
+    font-size: 12px;
+    font-weight: 700;
+    &.selectedFilterItems {
+        font-style: italic;
+    }
+}
+.displaySelectedField {
+    padding: 10px;
+    width: 75% !important;
+    max-width: 75% !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}

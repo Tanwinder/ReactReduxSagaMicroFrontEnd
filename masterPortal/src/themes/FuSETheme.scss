@@ -1,0 +1,406 @@
+$textColor: #c8ced3;
+$headerColor: #FFC105;
+
+.fuse-opc-heat-map {
+    margin-top: 32px;
+    .mapboxgl-canvas-container.mapboxgl-interactive, .mapboxgl-ctrl-group > button.mapboxgl-ctrl-compass {
+       display: none !important;
+    }
+    #fuse-heat-map {
+        .mapboxgl-map > div.mapboxgl-control-container > div.mapboxgl-ctrl-bottom-left > div > a {
+            display: none !important;
+        }
+    }
+}
+
+.gray .FuSE-MBA {
+    box-shadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+}
+.gray .fuse, 
+.gray .fuse_accuracy_graphs,
+.gray .fuse-opc-heat-map,
+.gray .FuSE-MBA {
+    div.echarts-for-react > div:nth-child(3) > div:nth-child(3) > div{
+        background-color: rgb(51, 122, 183) !important;
+    }
+    #FuSEGrid {
+        box-shadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+    }
+    #pulseLoader {
+        & div {
+            background-color: rgb(32, 168, 216) !important;
+        }
+    }    
+    .fade.show {
+        opacity: 1 !important;
+    }
+    .alert-info {
+        color: #336573 !important;
+        background-color: #e0f3f8 !important;
+        background: #e0f3f8 !important;
+        & div {
+            color: #336573 !important;
+            background-color: #e0f3f8 !important;
+            background: #e0f3f8 !important;
+        }
+    }
+    .alert-warning {
+        color: #856404 !important;
+        background-color: #fff3cd !important;
+        background: #fff3cd !important;
+        & div {
+            color: #856404 !important;
+            background-color: #fff3cd !important;
+            background: #fff3cd !important;
+        }
+    }
+    .alert-danger {
+        color: #813838 !important;
+        background-color: #fee2e1 !important;
+        background: #fee2e1 !important;
+        background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%) !important;
+        background-repeat: repeat-x !important;
+        & div {
+            color: #813838 !important;
+            background-color: #fee2e1 !important;
+            background: #fee2e1 !important;
+            background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%) !important;
+            background-repeat: repeat-x !important;
+        }
+    }    
+    div{
+        background:#2e2e2e !important;
+        // color:$textColor !important;
+        border-color: #6f7985 !important;     
+    }
+    button{
+        color: $textColor !important;
+    }
+    ul,li,input,h4,#allocation-control-date-range{
+        background:#2e2e2e !important;
+        color:$textColor !important;
+        border-color: #3a4149 !important;
+    }
+    table,tr,td,th {
+        color:$textColor !important;
+        border-color: #6f7985 !important;
+    }
+    tr:nth-child(odd) {background: #3a4149 !important}
+    tr:nth-child(even) {
+        th,td {
+            background: #2e2e2e !important
+        }
+    }
+    .AdCards .AdCardsHeader .AdCards_Heading,
+    .AdCards .AdCardsHeader .AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Button .AdCards_Angle_Button {
+        color:$headerColor !important;
+    }
+    .AdCards .AdCardsHeader,
+    .loading-bar-container,div.AdCards_Svg div{ 
+        background:#3a4149 !important;
+    }
+    .card-header {
+        background: #3a4149 !important;
+        border-color: #6f7985 !important;
+        div {
+            background: #3a4149 !important;
+        }
+        span {
+            color: $headerColor !important;
+        }
+    }
+    .react-virtualized-pivot-module-table .HeaderGrid .ReactVirtualized__Grid__innerScrollContainer .header-container {
+        border-bottom: 1px solid #6f7985 !important;
+        border-color: #6f7985 !important;
+    }
+    .filters .display-menu-arrow {
+        border-top: 5px solid $textColor !important;
+    }
+    .filters .display-menu-arrow.open {
+        border-top-color: transparent !important;
+        border-bottom: 5px solid $textColor !important;
+    }
+    section.drawer {
+        background: #2e2e2e !important;
+        border-color: #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table section.pivot-grid .HeaderGrid {
+        border-color: #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table .custom-header {
+        border-color: #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table .custom-header .custom-header-label {
+        background-color: #3a4149 !important;
+        border-right: 2px solid #6f7985 !important;
+        border-bottom: 1px solid #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table section.pivot-grid {
+        background: #2e2e2e !important;
+    }
+    section.react-virtualized-pivot-module-table section.pivot-grid .header-cell {
+        background-color: #3a4149 !important;
+        border-color: #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table section.pivot-grid .cell {
+        border-color: #6f7985 !important;
+    }
+    section.react-virtualized-pivot-module-table section.pivot-grid .column-sizer {
+        border-color: #6f7985 !important;
+        background: #3a4149 !important;
+    }
+    .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+        color:$textColor !important;
+    }
+    .Select-control {
+        border: 1px solid #3a4149 !important;
+    }
+    .Select-placeholder {
+        border-bottom: 1px solid #3a4149 !important;
+    }
+    .Select-menu-outer {
+        border-color: #6f7985 !important;
+        .Select-option, .VirtualizedSelectOption {
+            &:hover {
+                background-color: #3a4149 !important;
+            }
+        }
+    }
+    .Select-arrow {
+        border-color: $textColor transparent transparent !important;
+        border-style: solid;
+        border-width: 5px 5px 2.5px;
+        display: inline-block;
+        height: 0;
+        width: 0;
+        position: relative;
+    }
+    .Select.is-open > .Select-control .Select-arrow {
+        top: -2px;
+        border-color: transparent transparent $textColor !important;
+        border-width: 0 5px 5px;
+    }
+    .Select.is-open > .Select-arrow, .Select .Select-arrow-zone:hover > .Select-arrow {
+        border-top-color: $textColor !important;
+    }
+    .fm-svg-icon {
+        background: #3a4149 !important;
+        fill: $textColor;
+    }
+      
+    .fm-svg-icon:hover {
+        fill: #4285f4 !important;
+    }
+    // path {
+    //     fill: $textColor !important;
+    // }​
+    path:hover {
+        fill: #4285f4 !important;
+    }​
+    .checkbox-val {
+        &:hover {
+            background-color: #3a4149 !important;
+        }
+        & label {
+            & input {
+                &:checked {
+                    & ~ span {
+                        background-color: #3a4149 !important;
+                    }
+                    & ~ span:hover {
+                        background-color: #3a4149 !important;
+                    }
+                }
+            }
+        }
+    }
+    .movable_resizable_outer, .react-grid-layout{
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+    hr {
+        background: #6f7985 !important;
+    }
+    .graph-outer{
+        background: #3a4149 !important;
+    }
+    .filters .Select-placeholder-icon {
+        color:$textColor !important;
+    }
+    .Demand_Cards_Button {
+        & > a {
+            color: $textColor !important;
+            &:hover {
+                color: #4285f4 !important;
+            }
+        }
+    }
+    .graph-outer .graph-card:after {
+        border-bottom: 16px solid #2e2e2e !important;
+    }
+    .Download_Button, 
+    .Demand_Graph_Button,
+    .Settings_Button,
+    .Compress,
+    .Expand {
+        &:hover {
+            &:before {
+                color:#2e2e2e !important;    
+            }
+        }
+    }
+    .drawer-container .drawer-overlay {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+        
+    ::-webkit-scrollbar { width: 8px; height: 12px;}
+    ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+    ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+    ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+    ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+    ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+    ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+    ::-webkit-scrollbar-corner { background-color: #666;}
+    ::-webkit-resizer { background-color: #666;}
+    .filters .checkbox-filter .checkbox-val label input:hover ~ span {
+        background-color: #3a4149 !important;
+    }
+    .filters .checkbox-filter.show-menu {
+        border: 1px solid #3a4149 !important;
+    }
+    .filters .checkbox-filter .checkbox-val label input {
+        border: 1px solid #3a4149 !important;
+    }
+    .filters .checkbox-filter .checkbox-val label input:checked ~ span {
+        background-color: #3a4149 !important;
+    }
+    &.app-body{
+        background-color: #2e2e2e !important;
+    }
+    #FuSEGrid > div:nth-child(1) > div > div:nth-child(1) > div.ReactVirtualized__Grid > div > div:nth-child(3) {
+        background: linear-gradient(45deg, #3a4149 calc(60% - 1px), #6f7985 50%, #2e2e2e calc(60% + 0px)) !important;
+    }
+    .Cell-header {
+        color:$textColor !important;
+        border-color: #6f7985 !important;
+        background: #3a4149 !important;
+    }
+    .react-virtualized-pivot-module-menu .pivot-options .block__list_tags li {
+        border-color: #6f7985 !important;        
+    }
+    #fuse-heat-map .control-panel {
+        color: #c8ced3 !important;
+        box-shadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+    }
+    div:nth-child(2) > div.collapse.show > div > div > div > section > div > section > div > div.selectors-container > div:nth-child(n+1):nth-child(-n+5) > div.title,
+    div:nth-child(2) > div.collapse.show > div > div > div > section > div > section > div > div.fields-drag-container > div.fields > div, 
+    div:nth-child(2) > div.collapse.show > div > div > div > section > div > section > div > div.fields-drag-container > div.rows > div,
+    div:nth-child(2) > div.collapse.show > div > div > div > section > div > section > div > div.fields-drag-container > div.columns > div{
+        color: $textColor !important;
+    }
+    #fuse-heat-map {
+        .mapboxgl-map, .overlays, .mapboxgl-ctrl, .mapboxgl-ctrl-bottom-left, .nav, .mapboxgl-marker, .gray, .AdCards_Svg > div,
+        .mapboxgl-ctrl-icon.mapboxgl-ctrl-compass > .mapboxgl-ctrl-compass-arrow {
+            background: transparent !important;
+        }
+        .nav {
+            border-color: transparent !important;
+        }
+        .mapboxgl-ctrl-group > button {
+           background-color: $textColor !important;
+        }
+        .mapboxgl-ctrl-group > button + button {
+            border-top: 1px solid #6f7985;
+        }
+        .mapboxgl-marker > div {
+            background: none !important;
+        }
+    }
+}
+
+.gray .fuse_accuracy_graphs {
+    .AdCards, .subclass-level-breakdown{
+        box-shadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+    }
+    .AdCards_Heading {
+        color: $headerColor !important;
+    }
+}
+.graySF .fuse,
+.graySF .fuse-opc-heat-map, 
+.graySF .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,
+    .AdCards_Button,
+    .AdCards_Heading{
+        font-size: 12px !important;
+    }
+}
+.grayBF .fuse,
+.grayBF .fuse-opc-heat-map, 
+.grayBF .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        font-size: 14px !important;
+    }
+}
+.grayNC .fuse,
+.grayNC .fuse-opc-heat-map, 
+.grayNC .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        opacity: 0.9 !important;
+    }
+}
+.grayLC .fuse,
+.grayLC .fuse-opc-heat-map, 
+.grayLC .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        opacity: 0.8 !important;
+    }
+}
+
+.white .fuse,
+.white .fuse-opc-heat-map, 
+.white .fuse_accuracy_graphs{
+    div, table,tr,td,th,input{
+        color:#000 !important;
+    }
+    .AdCards_Button{
+        color:#000 !important;
+    }
+}
+.whiteSF .fuse,
+.whiteSF .fuse-opc-heat-map, 
+.whiteSF .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        font-size: 12px !important;
+    }
+}
+.whiteBF .fuse,
+.whiteBF .fuse-opc-heat-map, 
+.whiteBF .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        font-size: 14px !important;
+    }
+}
+.whiteNC .fuse,
+.whiteNC .fuse-opc-heat-map, 
+.whiteNC .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        opacity: 0.9 !important;
+    }
+}
+
+.whiteLC .fuse,
+.whiteLC .fuse-opc-heat-map, 
+.whiteLC .fuse_accuracy_graphs{
+    div, table,tr,td,th,input,.AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Heading{
+        opacity: 0.8 !important;
+    }
+}

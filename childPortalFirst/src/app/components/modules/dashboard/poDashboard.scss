@@ -1,0 +1,37 @@
+@mixin buttonDesign($color) {
+    border-radius: 4px !important;
+    color: $color;
+    height: 34px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+$border: 1px solid #c2cfd6;
+
+.rocAdmin {
+    & table>thead>tr>th {
+        position: relative;
+        background-color: #f0f3f5;
+        border-bottom: $border;
+        font-size: 1.2rem;
+    }
+    .react-bootstrap-table table {
+        border: $border;
+    }
+    & .po_button_input {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.1rem;
+        & label {
+            flex: 1 1 100%;
+            font-size: 1.2rem;
+        }
+        & input {
+            @include buttonDesign(black);
+            max-width: 250px;
+            margin-right: 1rem;
+        }
+        & button {
+            @include buttonDesign(white);
+        }
+    }
+}

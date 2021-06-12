@@ -1,0 +1,26 @@
+.cards_table {
+    table{
+        border: 1px solid #ced4da;
+    }
+    thead{
+        display: block;
+        tr{
+            background-color: #e4e5e6;
+        }
+    }
+    tbody{
+        display: block;
+        max-height: 250px;
+        overflow-y: auto;
+    }
+}
+.cards_table_no_rec_found {
+    table{
+        border: 1px solid #ced4da;
+    }
+    thead{
+        tr{
+            background-color: #e4e5e6;
+        }
+    }
+}

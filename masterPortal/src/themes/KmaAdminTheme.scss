@@ -1,0 +1,134 @@
+$white: #c8ced3;
+.gray .kma-modal-popup  {
+    .card,.card-header,.card-body,.chips-input{
+        background:#2e2e2e !important;
+        color:$white !important;
+        border-color: #3a4149 !important;
+    }
+}
+.gray .kma_admin {
+        div,table,tr,td,th,input,#allocation-control-date-range,.card,.card-header,.card-body,.chips-input{
+            background:#2e2e2e !important;
+            color:$white !important;
+            border-color: #3a4149 !important;
+        }
+        .AdCards .AdCardsHeader .AdCards_Heading,
+        .AdCards .AdCardsHeader .AdCards_Button,.ace_card_header .title{
+            color:#FFC105 !important;
+        }
+        .Select-value-label,.fa-angle-up{
+            color:$white !important;
+        }
+        .cloudIconStyles{
+            background:none !important;
+        }
+        .app-body{
+                background-color: #2e2e2e !important;
+        }
+        .alert-warning {
+            color: #8a6d3b !important;
+            background-color: #fcf8e3 !important;
+            border-color: #faebcc !important;
+        }
+        .close span{
+            color: #a94442 !important;
+            background-color: #fee2e1 !important;
+        }
+        .alert-danger {
+            color: #813838 !important;
+            background-color: #fee2e1 !important;
+            border: 1px solid #4771A5 !important;
+        }
+        .alert-success {
+            color: #155724 !important;
+            background-color: #d4edda !important;
+            border-color: #4771A5 !important;
+        }
+        .loading-bar{
+            background-color: #279cdb !important;
+        }
+        .ace_card .ace_card_header,.button_wrapper,
+        .loading-bar-container,div.svg div{ 
+            background:#3a4149 !important;
+        }
+        ::-webkit-scrollbar { width: 8px; height: 12px;}
+        ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+        ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+        ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+        ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+        ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+        ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+        ::-webkit-scrollbar-corner { background-color: #666;}
+        ::-webkit-resizer { background-color: #666;}
+    }
+    .graySF .kma_admin{
+        div, table,tr,td,th,input,
+        .AdCards_Button,
+        .AdCards_Heading{
+            font-size: 12px !important;
+        }
+    }
+    .grayBF .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 14px !important;
+        }
+    }
+    .grayNC .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.9 !important;
+        }
+    }
+    .grayLC .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.8 !important;
+        }
+    }
+    
+    .white .kma_admin{
+        div, table,tr,td,th,input{
+          //  background:$white;
+            color:#000 !important;
+          //  border-color: #c2cfd6;
+        }
+        .AdCards_Button{
+            color:#000 !important;
+        }
+        // .alert {
+        //     border: 1px solid #4771A5 !important;
+        // }
+        // .alert-danger {
+        //     color: #813838 !important;
+        //     background-color: #fee2e1 !important;
+        // }
+        // .red {
+        //     color: red !important;
+        // }
+    }
+    .whiteSF .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 12px !important;
+        }
+    }
+    .whiteBF .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            font-size: 14px !important;
+        }
+    }
+    .whiteNC .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.9 !important;
+        }
+    }
+    
+    .whiteLC .kma_admin{
+        div, table,tr,td,th,input,.AdCards_Button,
+        .AdCards .AdCardsHeader .AdCards_Heading{
+            opacity: 0.8 !important;
+        }
+    }

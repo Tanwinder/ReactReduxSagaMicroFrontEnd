@@ -1,0 +1,20 @@
+{
+  "App1":[                                                                                                                                         
+    {
+      "APP1": {
+        "accessLevel": "ADMIN",
+        "profileText": "Admin",
+        "userType": "ADMIN"
+      }
+    }
+  ],
+  "App2": [
+    {
+      "APP2": {
+        "accessLevel": "ADMIN",
+        "profileText": "Admin",
+        "userType": "ADMIN"
+      }
+    }
+  ]
+}

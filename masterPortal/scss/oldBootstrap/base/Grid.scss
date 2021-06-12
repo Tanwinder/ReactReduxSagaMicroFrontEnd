@@ -1,0 +1,117 @@
+.GridRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.GridColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.LeftSideGridContainer {
+  flex: 0 0 75px;
+  z-index: 10;
+}
+
+.LeftSideGrid {
+  overflow: hidden !important;
+}
+.HeaderGrid {
+  width: 100%;
+  overflow: hidden !important;
+}
+.BodyGrid {
+  width: 100%;
+}
+
+.oddRow {
+  background-color: $white-variant-1;
+}
+.highlightedRow {
+  border: 1px solid $violet !important;
+}
+
+.cell,
+.headerCell { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 .5em;
+  text-overflow: ellipsis;    
+  overflow: hidden;  
+}
+.cell {
+  border-bottom: 1px solid $black-variant-1;
+  border-left: 1px solid $black-variant-1;  
+  font-size: 11px;  
+}
+
+// .lastCell {
+//   border-right: 1px solid $black-variant-1;    
+// }
+
+.headerCell {
+  font-size: 11px;
+  border-left: 1px solid $black-variant-1;
+}
+.centeredCell {
+  align-items: center;
+  text-align: center;
+}
+
+.letterCell {
+  font-size: 1.5em;
+  color: $white;
+  text-align: center;
+}
+
+.noCells {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: $gray-variant-1;
+}
+
+.cell > div {
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.cell > div > div {
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dismissIcon{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: deepskyblue;
+  font-size: 36px;
+  width: 40px;
+}
+.dismissedIcon{
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s;
+  transform : rotate(360deg);
+  text-align: center;
+  color: orangered;
+  font-size: 36px;
+  width: 40px;
+}
+.btn-link{
+  white-space: normal !important;
+}
+.sku-redirect{
+  font-weight: bold;
+}
+
+

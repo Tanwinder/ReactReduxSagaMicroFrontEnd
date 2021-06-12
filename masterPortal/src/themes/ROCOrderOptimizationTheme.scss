@@ -1,0 +1,555 @@
+$white: white;
+$BGWhite: #fff;
+$salmon: #FA8072;
+$textColor: #c8ced3;
+$headerColor: #FFC105;
+$CardBgColor: #3a4149;
+$CardBorderColor:#23282c;
+$darkBackground: #08263a !important;
+$darkBoxShadow: 0px 1px 3px 0px #c8ced3, 0px 1px 1px 0px #c8ced3, 0px 2px 1px -1px #c8ced3 !important;
+.gray .orderOptimization{
+    .fade.show {
+        opacity: 1 !important;
+    }
+    .stepper_steps {
+        span.inactive_step {
+            background: gray!important;
+            .fas {
+                color: white !important;
+            }
+        }
+        span.active_step {
+            background: #45a164!important;
+            .fas {
+                color: white !important;
+            }
+        }
+    }
+    .alert-info {
+        color: #336573 !important;
+        background-color: #e0f3f8 !important;
+        background: #e0f3f8 !important;
+        & div {
+            color: #336573 !important;
+            background-color: #e0f3f8 !important;
+            background: #e0f3f8 !important;
+        }
+    }
+    // .ReactVirtualized__Grid {
+    //     div, textarea, table,tr,td,th,input,.popover-header {
+    //         background: $CardBgColor !important;
+    //         color: $textColor !important;
+    //         border-color: $CardBorderColor !important;
+    //     }
+    // }
+    .card {
+        background: $CardBgColor !important;
+        color: $textColor !important;
+        border-color: $CardBorderColor !important;
+    }
+    .manage_delivery_table .ReactVirtualized__Grid__innerScrollContainer div {
+        background: #3a4149 !important;
+        &.editable_cell_column {
+            border-color: black!important;
+        }
+    }
+    .successAnimation {
+        background: rgba(0, 0, 0, 0.5)!important;
+    }
+    .__react_component_tooltip.type-dark , .modifyOSBtnTooltip, .createOSBtnTooltip, .clusterAddInsideTable_tooltip{
+        color: #222!important;
+        background-color: $white!important;
+    }
+    .fas {
+        color: $textColor !important;
+    }
+    .createOSBtnTooltip:before, .modifyOSBtnTooltip:before {
+        border-top: 7px solid $white!important;
+    }
+    .__react_component_tooltip.type-dark.place-top:after {
+        border-top-color: $white!important;
+    }
+    .__react_component_tooltip.type-dark.place-left:after {
+        border-left-color: $white!important;  
+    }
+    .clusterAddInsideTable_tooltip::before {
+        border-right: 7px solid $white!important;
+    }
+    .alert-warning {
+        color: #856404 !important;
+        background-color: #fff3cd !important;
+        background: #fff3cd !important;
+        & div {
+            color: #856404 !important;
+            background-color: #fff3cd !important;
+            background: #fff3cd !important;
+        }
+    }
+    .alert-danger {
+        color: #813838 !important;
+        background-color: #fee2e1 !important;
+        background: #fee2e1 !important;
+        background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%) !important;
+        background-repeat: repeat-x !important;
+        & div {
+            color: #813838 !important;
+            background-color: #fee2e1 !important;
+            background: #fee2e1 !important;
+            background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%) !important;
+            background-repeat: repeat-x !important;
+        }
+    }  
+    .alert-success {
+        color: white !important;
+        // border-color: rgb(43, 224, 149)!important;
+        // background-color: rgb(11, 151, 93)!important;
+        // background: #d4edda !important;
+        background-image: linear-gradient(to bottom,rgb(138, 243, 199) 0,rgb(11, 151, 93) 100%) !important;
+        background-repeat: repeat-x !important;
+        & div {
+            color: white !important;
+            // border-color: rgb(11, 151, 93)!important;
+            // background-color: rgb(11, 151, 93)!important;
+            background-image: linear-gradient(to bottom,rgb(138, 243, 199) 0,rgb(11, 151, 93) 100%) !important;
+            background-repeat: repeat-x !important;
+        }
+    }   
+    div {
+        background:#2e2e2e !important;
+        // color:$textColor !important;
+        border-color: #6f7985 !important;  
+    }
+    button{
+        color: $white !important;
+    }
+    ul,li,input,h4,#allocation-control-date-range{
+        background:#2e2e2e !important;
+        color:$textColor !important;
+        border-color: $CardBgColor !important;
+    }
+    table,tr,td,th {
+        color:$textColor !important;
+        border-color: #6f7985 !important;
+    }
+    tr:nth-child(odd) {background: $CardBgColor !important}
+    tr:nth-child(even) {
+        th,td {
+            background: #2e2e2e !important
+        }
+    }
+    .AdCards .AdCardsHeader .AdCards_Heading,
+    .AdCards .AdCardsHeader .AdCards_Button,
+    .AdCards .AdCardsHeader .AdCards_Button .AdCards_Angle_Button {
+        color:$headerColor !important;
+    }
+    .AdCards .AdCardsHeader,
+    .loading-bar-container,div.AdCards_Svg div{ 
+        background:$CardBgColor !important;
+    }
+    .card-header {
+        background: $CardBgColor !important;
+        border-color: #6f7985 !important;
+        div {
+            background: $CardBgColor !important;
+        }
+        span {
+            color: $headerColor !important;
+        }
+    }
+    .filters .display-menu-arrow {
+        border-top: 5px solid $textColor !important;
+    }
+    .filters .display-menu-arrow.open {
+        border-top-color: transparent !important;
+        border-bottom: 5px solid $textColor !important;
+    }
+    section.drawer {
+        background: #2e2e2e !important;
+        border-color: #6f7985 !important;
+    }
+    .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+        color:$textColor !important;
+    }
+    .Select-control {
+        border: 1px solid $CardBgColor !important;
+    }
+    .Select-placeholder {
+        border-bottom: 1px solid $CardBgColor !important;
+    }
+    .Select-menu-outer {
+        // border-color: #6f7985 !important;
+        .Select-option, .VirtualizedSelectOption {
+            &:hover {
+                background-color: $CardBgColor !important;
+            }
+        }
+    }
+    .Select-arrow {
+        border-color: $textColor transparent transparent !important;
+        border-style: solid;
+        border-width: 5px 5px 2.5px;
+        display: inline-block;
+        height: 0;
+        width: 0;
+        position: relative;
+    }
+    .Select.is-open > .Select-control .Select-arrow {
+        top: -2px;
+        border-color: transparent transparent $textColor !important;
+        border-width: 0 5px 5px;
+    }
+    .Select.is-open > .Select-arrow, .Select .Select-arrow-zone:hover > .Select-arrow {
+        border-top-color: $textColor !important;
+    }
+    .fm-svg-icon {
+        background: $CardBgColor !important;
+        fill: $textColor;
+    }
+      
+    .fm-svg-icon:hover {
+        fill: #4285f4 !important;
+    }
+    // path {
+    //     fill: $textColor !important;
+    // }​
+    path:hover {
+        fill: #4285f4 !important;
+    }​
+    .checkbox-val {
+        &:hover {
+            background-color: $CardBgColor !important;
+        }
+        & label {
+            & input {
+                &:checked {
+                    & ~ span {
+                        background-color: $CardBgColor !important;
+                    }
+                    & ~ span:hover {
+                        background-color: $CardBgColor !important;
+                    }
+                }
+            }
+        }
+    }
+    .movable_resizable_outer, .react-grid-layout{
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+    hr {
+        background: #6f7985 !important;
+    }
+    .graph-outer{
+        background: $CardBgColor !important;
+    }
+    .filters .Select-placeholder-icon {
+        color:$textColor !important;
+    }
+    .Demand_Cards_Button {
+        & > a {
+            color: $textColor !important;
+            &:hover {
+                color: #4285f4 !important;
+            }
+        }
+    }
+    .graph-outer .graph-card:after {
+        border-bottom: 16px solid #2e2e2e !important;
+    }
+    .Download_Button, 
+    .Demand_Graph_Button,
+    .Settings_Button,
+    .Compress,
+    .Expand {
+        &:hover {
+            &:before {
+                color:#2e2e2e !important;    
+            }
+        }
+    }
+    .drawer-container .drawer-overlay {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+        
+    ::-webkit-scrollbar { width: 8px; height: 12px;}
+    ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+    ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+    ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+    ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+    ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+    ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+    ::-webkit-scrollbar-corner { background-color: #666;}
+    ::-webkit-resizer { background-color: #666;}
+    .filters .checkbox-filter .checkbox-val label input:hover ~ span {
+        background-color: $CardBgColor !important;
+    }
+    .filters .checkbox-filter.show-menu {
+        border: 1px solid $CardBgColor !important;
+    }
+    .filters .checkbox-filter .checkbox-val label input {
+        border: 1px solid $CardBgColor !important;
+    }
+    .filters .checkbox-filter .checkbox-val label input:checked ~ span {
+        background-color: $CardBgColor !important;
+    }
+
+    .react-bootstrap-table {
+        table th {
+            background: $CardBgColor!important; 
+        }
+    }
+    
+        div, textarea, table,tr,td,th,input,.popover-header {
+            background:#2e2e2e !important;
+            color:$textColor !important;
+            border-color: $CardBgColor !important;
+        }
+        .createOrderStepper {
+            background: $CardBgColor !important;
+            color: $textColor !important;
+            border-color: $CardBorderColor !important;
+            & div {
+                background: $CardBgColor !important;
+                color: $textColor !important;
+                border-color: $CardBorderColor !important;
+                // &.stepper_line {
+                //     color: rgba(248, 192, 9, 0.897) !important;
+                //     background: rgba(248, 192, 9, 0.897) !important;
+                //     border-color: rgba(248, 192, 9, 0.897) !important;
+                // }
+            }
+        }
+        .stepper_steps {
+            background: $CardBgColor !important;
+            color: $textColor !important;
+            border-color: $CardBorderColor !important;
+            & a, & > div {
+                // color: $textColor !important;
+                color: #FFC105 !important;
+            }
+        }
+        
+        .input-group-text {
+            background-color: gray !important;
+            opacity: .8;
+            border: none;
+        }
+        .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+            color: $textColor;
+        }
+        .app-body{
+            background-color: #2e2e2e !important;
+        }
+        .AdCards_Button,.form_label{
+            color:$textColor !important;
+        }
+        .alert-danger, .alert-danger p, .alert-danger div{
+            color: #813838 !important;
+            background-color: #fdd6d6 !important;
+            border-color: #fdd6d6 !important;
+        }
+        .loading-bar{
+            background-color: #279cdb !important;
+        }
+        .popover.bs-popover-bottom .arrow::after{
+            border-bottom-color: #2e2e2e !important;
+        }
+        .opcToolTip:after {
+            border-top-color: #2e2e2e !important;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+        .card .card-header,
+        .card-header .btn-group,
+        .loading-bar-container,
+        .MyDragHandleClassName div{
+            background:$CardBgColor !important;
+             color:rgba(248, 192, 9, 0.897) !important;
+             div .loading-bar{
+                background-color: #279cdb!important;
+            } 
+        }
+        .red .ellipse_content,.redClr{
+            color: $salmon !important;
+        }
+        .greenClr{
+            color: #eafb04 !important;
+        }
+        .blueClr{
+            color: #0790f3 !important;
+        }
+        a.packDetailIcon{
+            color: $textColor !important;
+        }
+        .checkbox-val {
+            &:hover {
+                background-color: $CardBgColor !important;
+            }
+            & label {
+                & input {
+                    &:checked {
+                        & ~ span {
+                            background-color: $CardBgColor !important;
+                        }
+                    }
+                }
+            }
+            & label {
+                & input {
+                    &:checked {
+                        & ~ span:hover {
+                            background-color: $CardBgColor !important;
+                        }
+                    }
+                }
+            }
+        }
+        .movable_resizable_outer, .react-grid-layout{
+            background: rgba(0, 0, 0, 0.3) !important;
+        }
+        svg path[style*="fill: lightgrey" ] {
+            fill:grey !important;
+        }
+        svg path[style*="fill: grey"],svg path[style*="rgb(108, 117, 125)"] {
+            fill:lightgrey !important;
+        }
+        .ReactVirtualized__Table__row.row-grey-background,
+        .ReactVirtualized__Table__row.row-grey-background div > *,
+        .ReactVirtualized__Table__row.row-grey-background .extraRowData-maintain,
+        .ReactVirtualized__Table__row.row-grey-background .ReactVirtualized__Table__rowColumn
+        {
+            background: gray !important
+        }
+        
+        ::-webkit-scrollbar { width: 8px; height: 12px;}
+        ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+        ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+        ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+        ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+        ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+        ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+        ::-webkit-scrollbar-corner { background-color: #666;}
+        ::-webkit-resizer { background-color: #666;}
+    }
+    .graySF .orderOptimization{
+        div,table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 12px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .grayBF .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 14px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .grayNC .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.9;
+        }
+    }
+    .grayLC .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.8;
+        }
+    }
+
+    .white .orderOptimization{
+        div, table,tr,td,th,input{
+            color:#000;
+        }
+        .AdCards_Button{
+            color:#000;
+        }
+    }
+    .whiteSF .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 12px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .whiteBF .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 14px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .whiteNC .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.9;
+        }
+    }
+
+    .whiteLC .orderOptimization{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.8;
+        }
+    }
+
+.rowHeight-25 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 2px 8px;
+    }
+}
+.rowHeight-26 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 3px 8px;
+    }
+}
+.rowHeight-27 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 4px 8px;
+    }
+}
+.rowHeight-28 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 5px 8px;
+    }
+}
+.rowHeight-29 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 6px 8px;
+    }
+}
+.rowHeight-30 .orderOptimization{
+     .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+        padding: 7px 8px;
+     }
+   
+}
+.rowHeight-31 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 8px 8px;
+    }
+}
+.rowHeight-32 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 9px 8px;
+    }
+}
+
+.rowHeight-33 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 10px 8px;
+    }
+}
+.rowHeight-34 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 11px 8px;
+    }
+}
+.rowHeight-35 .orderOptimization{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 12px 8px;
+    }
+}
+

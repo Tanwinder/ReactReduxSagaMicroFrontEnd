@@ -1,0 +1,222 @@
+$white: #c8ced3;
+$salmon: #FA8072;
+.gray .allocation{
+    
+        div, table,tr,td,th,input,.popover-header {
+            background:#2e2e2e !important;
+            color:$white !important;
+            border-color: #3a4149 !important;
+        }
+        .app-body{
+            background-color: #2e2e2e !important;
+        }
+        .AdCards_Button,.form_label{
+            color:$white !important;
+        }
+        .alert-danger, .alert-danger p, .alert-danger div{
+            color: #813838 !important;
+            background-color: #fdd6d6 !important;
+            border-color: #fdd6d6 !important;
+        }
+        .loading-bar{
+            background-color: #279cdb !important;
+        }
+        .popover.bs-popover-bottom .arrow::after{
+            border-bottom-color: #2e2e2e !important;
+        }
+        .opcToolTip:after {
+            border-top-color: #2e2e2e !important;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+        .card .card-header,
+        .card-header .btn-group,
+        .loading-bar-container,
+        .MyDragHandleClassName div{
+            background:#3a4149 !important;
+             color:rgba(248, 192, 9, 0.897) !important;
+        }
+        .red .ellipse_content,.redClr{
+            color: $salmon !important;
+        }
+        .greenClr{
+            color: #eafb04 !important;
+        }
+        .blueClr{
+            color: #0790f3 !important;
+        }
+        a.packDetailIcon{
+            color: $white !important;
+        }
+        .checkbox-val {
+            &:hover {
+                background-color: #3a4149 !important;
+            }
+            & label {
+                & input {
+                    &:checked {
+                        & ~ span {
+                            background-color: #3a4149 !important;
+                        }
+                    }
+                }
+            }
+            & label {
+                & input {
+                    &:checked {
+                        & ~ span:hover {
+                            background-color: #3a4149 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .movable_resizable_outer, .react-grid-layout{
+            background: rgba(0, 0, 0, 0.3) !important;
+        }
+        svg path[style*="fill: lightgrey" ] {
+            fill:grey !important;
+        }
+        svg path[style*="fill: grey"],svg path[style*="rgb(108, 117, 125)"] {
+            fill:lightgrey !important;
+        }
+        .ReactVirtualized__Table__row.row-grey-background,
+        .ReactVirtualized__Table__row.row-grey-background div > *,
+        .ReactVirtualized__Table__row.row-grey-background .extraRowData-maintain,
+        .ReactVirtualized__Table__row.row-grey-background .ReactVirtualized__Table__rowColumn
+        {
+            background: gray !important
+        }
+        
+        ::-webkit-scrollbar { width: 8px; height: 12px;}
+        ::-webkit-scrollbar-track:vertical {  background-color: #666;}
+        ::-webkit-scrollbar-track:horizontal {  background-color: #666;}
+        ::-webkit-scrollbar-track-piece:vertical { background-color: #666;}
+        ::-webkit-scrollbar-track-piece:horizontal { background-color: #666;}
+        ::-webkit-scrollbar-thumb:vertical {height: 50px; background-color: #6f7985; border-radius: 8px;}
+        ::-webkit-scrollbar-thumb:horizontal{ background: #6f7985; border-radius: 8px; }
+        ::-webkit-scrollbar-corner { background-color: #666;}
+        ::-webkit-resizer { background-color: #666;}
+    }
+    .graySF .allocation{
+        div,table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 12px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .grayBF .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 14px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .grayNC .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.9;
+        }
+    }
+    .grayLC .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.8;
+        }
+    }
+
+    .white .allocation{
+        div, table,tr,td,th,input{
+            color:#000;
+        }
+        .AdCards_Button{
+            color:#000;
+        }
+    }
+    .whiteSF .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 12px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .whiteBF .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            font-size: 14px;
+        }
+        .opcToolTip.opcToolTipDc{
+            width: max-content !important;
+        }
+    }
+    .whiteNC .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.9;
+        }
+    }
+
+    .whiteLC .allocation{
+        div, table,tr,td,th,input,.AdCards_Button,span,.dt-range-lbl{
+            opacity: 0.8;
+        }
+    }
+
+.rowHeight-25 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 2px 8px;
+    }
+}
+.rowHeight-26 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 3px 8px;
+    }
+}
+.rowHeight-27 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 4px 8px;
+    }
+}
+.rowHeight-28 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 5px 8px;
+    }
+}
+.rowHeight-29 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 6px 8px;
+    }
+}
+.rowHeight-30 .allocation{
+     .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+        padding: 7px 8px;
+     }
+   
+}
+.rowHeight-31 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 8px 8px;
+    }
+}
+.rowHeight-32 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 9px 8px;
+    }
+}
+
+.rowHeight-33 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 10px 8px;
+    }
+}
+.rowHeight-34 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 11px 8px;
+    }
+}
+.rowHeight-35 .allocation{
+    .PoCompHeader .react-bootstrap-table .table > tbody > tr > td  {
+       padding: 12px 8px;
+    }
+}
+

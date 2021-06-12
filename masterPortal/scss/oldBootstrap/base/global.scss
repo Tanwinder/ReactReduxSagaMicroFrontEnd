@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+/* Page Layout styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;       
+  // overflow: hidden;  
+}
+.container {
+  width: 100vw;  
+  height: 100vh;    
+}
+.header {    
+  height: 7vh;
+  width: 100vw;               
+  background-color: $layout-bg-color;
+  color: $layout-text-color;
+}
+.content {  
+  height: 86vh;
+  width: 100vw;
+  overflow-x: hidden; 
+  overflow-y: auto;    
+  padding-left: 2vh;
+}
+.footer {
+  height: 5vh;
+  width: 100vw;
+  font-size: 0.9vmax;  
+  padding-left: 1vh;
+  text-align: left;       
+}
+.divider {  
+  height: 1vh;
+  width: 100vw;  
+}
+.separator,{  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 7px;
+	border: 0;
+	box-shadow: 0 7px 7px -7px $separator-border-color inset;  
+  width: 100%;
+}
+.separator-hdr {    
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 2px;
+	border: 0;
+	box-shadow: 0 2px 2px -2px $separator-border-color inset;  
+  width: 100%;
+}
+.top-2{
+  margin-top: 2.5vh;
+}
+
+/* Common Styles for all pages*/
+.panel-default > .panel-heading {	  
+	font-size: 14px;
+  background-image: linear-gradient(to bottom, $layout-bg-color 0, $layout-bg-color 100%);
+  color:$white;
+}
+
+.row-top-padding-30 {
+   margin-top: 30px;
+}
+.row-top-padding-20 {
+   margin-top: 20px;
+}
+.row-top-padding-10 {
+   margin-top: 10px;
+}
+.select,
+.input {	
+	font-size: 11px;
+}
+
+.margin-left{
+	margin-left: 5px;
+}
+.margin-left-3{
+  margin-left: 3px;
+}
+.margin-left-10 {
+  margin-left: 10px;
+}
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.margin-right{
+	margin-right: 5px;
+}
+.margin-right-3 {
+  margin-right: 3px;
+}
+.margin-right-10 {
+  margin-right: 10px;
+}
+.margin-right-20 {
+  margin-right: 20px;
+}
+.margin-right-35 {
+	margin-right: 35px;
+}
+
+.float-right {
+  float: right;
+}
+.pointer { 
+ 	cursor: pointer;
+}
+.green {
+	color: $green;
+}
+.red {
+	color: $red;
+}
+.gray{
+  color: $block-gray;
+}
+.bg-green {
+	background-color: $light-green !important;	
+}
+.bg-red {
+	background-color: $light-red !important;
+  color:$white !important;
+}
+.bg-gray {
+	background-color: $block-gray !important;		
+}
+.bg-white {
+  background-color: $white !important;		
+}
+.strong{
+  font-weight: bold;
+}
+.font-size-11{
+  font-size: 11px;
+}
+.ab-sku-modal-dialog > .modal-dialog {
+  top: 2.5vh;
+  width: 90vw;
+  height: 80vh;  
+  bottom: 2.5vh;
+}
+.admin-sku-modal-dialog > .modal-dialog {
+  top: 2.5vh;
+  width: 95vw;
+  height: 80vh;  
+}
+.modal-header {
+  background-color: $layout-bg-color; 
+  padding: 0.5em;
+  background-image: linear-gradient(to bottom, $layout-bg-color 0, $layout-bg-color 100%);  
+  color: $layout-text-color;
+}
+.modal-title {
+ font-size: 1.25vmax;
+ font-weight: normal; 
+}
+.close {
+  color:#fff;  
+  font-weight: bold;
+  opacity: 1;
+
+}
+.padding-left-level-1 {
+  padding-left: 1em !important;
+}
+.padding-left-level-2 {
+  padding-left: 3em !important;
+}
+.padding-left-level-3 {
+  padding-left: 4.5em !important;
+}
+.padding-left-level-4 {
+  padding-left: 6em !important;
+}
+.padding-left-level-5 {
+  padding-left: 7.5em !important;
+}
+.padding-left-level-6 {
+  padding-left: 9em !important;
+}
+.green-1 {
+	color: $green-variant-1;
+}
+.margin-top {
+  margin-top: 5px;
+}
+.tooltip{
+  font-size: 11px;
+}
+.parent-fixed-row {
+  font-weight: bold;
+  font-size: 12px !important;
+}
+.link{
+  color:#337ab7;  
+}
+.link:hover{
+  text-decoration:underline;
+}
+.ppe-icon {
+  max-width: 2.5vw;
+  max-height: 2.5vh;     
+  margin: auto;
+}
+.ppe-link{
+  font-size: 11px;
+  text-align: center;
+}
+.orange{
+  color: #ff8000;
+}
+.font-size-18{
+  font-size: 18px;
+  text-align: left;
+}
+.bg-orange{
+  background-color: #ff8000 !important;
+  color: $white;
+}
+.row-padding-top-1{
+  padding-top: 0.1vh;
+}
+.Select--multi > .Select-value{
+  color: inherit !important;
+}
+.font-size-12{
+  font-size: 12px;
+}
+.font-size-18{
+  font-size: 18px;
+}
+.font-size-18-dis{
+  font-size: 30px !important;
+  text-align: center;
+  color: $blue;
+}
+.font-size-22{
+  font-size: 22px;
+}
+.font-size-14{
+  font-size: 14px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+
+.alert{
+border: 1px solid $blue-1;
+}
+.alert > .close{
+color: red;
+}
+.table-responsive {
+  border: 1px solid $charcoal-black;
+}
+.table-responsive > tr > th{
+  border: 1px solid $charcoal-black;
+}
+.table-responsive > tbody >  tr > td{
+  border: 1px solid $charcoal-black;
+}
+.layoutbgcolor {
+  background-color: $theme-color; 
+}
+.notifications-br{
+  width: 480px !important;
+  right: 15px !important;
+  bottom: 6vh !important;
+}
+.italic{
+  font-style: italic;
+}
+.error-msg {
+  color: red;  
+}
+.error-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray-variant-1;
+  text-align: center;
+  font-size: 1.25vmax;
+  font-weight: bold;
+}

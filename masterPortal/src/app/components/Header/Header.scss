@@ -1,0 +1,191 @@
+
+$app-color: #20a8d8;
+
+@keyframes abanico {
+    0% {
+      transform: rotate(0deg);
+    }
+    7.5% {
+      transform: rotate(25deg);
+    }
+    30% {
+      transform: rotate(-25deg);
+    }
+    45% {
+      transform: rotate(15deg);
+    }
+    58% {
+      transform: rotate(-10deg);
+    }
+    70% {
+      transform: rotate(5deg);
+    }
+    87.5% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+@keyframes popup {
+0% {transform: scale(0.5)}
+100% {transform: scale(1.2)}
+}
+.app-body {
+    & .ims_notification_po {
+        position: fixed;
+        width: 100%;
+        z-index: 1111;
+        top: 51px;
+        right: 4px;
+        max-width: 350px;
+    }
+    & .ims_notification_msg {
+        display: flex;
+        justify-content: space-between;
+    }
+    & .ims_notification_msg_close {
+        padding: 0 5px;
+    }
+}
+.app-header {
+    & .onlineUsers {
+        font-size: 1.2rem;
+    }
+    & .notification_circle {
+        position: absolute;
+        top: 6px;
+        left: 32px;
+        z-index: 1;
+        font-size: 12px;
+        padding: 1px 5px 0;
+        border-radius: 51%;
+        color: #fff;
+        background-color: #e55353!important;
+        &.notificationSeen {
+            background-color: #005780!important;
+        }
+    }
+    & .dropdown-item {
+        & .fa_user_size {
+            font-size: 1.5rem;
+            position: relative;
+            margin-right: 12px;
+        }
+    }
+    & .user_count {
+        font-size: 1rem;
+        font-family: initial;
+        position: absolute;
+        color: black;
+        box-sizing: border-box;
+        top: -5px;
+        right: -4px;
+        padding: 1px 2px;
+        border: 1px solid green;
+        border-radius: 45%;
+    }
+    & .Badge_icon_width {
+        &.opcToolTip_outer {
+            top: 2px;
+           & span {
+            background: #005780 !important;
+            color: white !important;
+            top: -1px !important;
+            font-size: 1.3rem;
+            /* left: 32px; */
+            font-size: 12px;
+            padding: 1px 5px 0;
+            border-radius: 50%;
+            border: navajowhite;
+            height: initial;
+            width: initial;
+            min-width: initial;
+            border: none;
+            }
+        }
+    }
+    & .displayOnlineUsers {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    & .dropdown-menu {
+        border-radius: 0;
+    }
+    & .dropdown  {
+        &:focus {
+            outline: none;
+        }
+    }
+    & .dropdown-header {
+        & strong {
+            font-size: 1.2rem;
+            color: #4f5d73;
+        }
+    }
+    & .dropdown-item {
+        font-size: 1.1rem;
+        padding: 9px 35px 9px 20px;
+        & i {
+            margin-right: 0px;
+        }
+    }
+    & .users_dot_circle {
+        position: absolute;
+        display: block;
+        right: 17px;
+        top: 17px;
+        width: 5px;
+        height: 5px;
+        color: green;
+        border-radius: 50%;
+        box-shadow: inset 0px 0px 20px green;
+    }
+    & .online_user_outer {
+        max-height: 221px;
+        overflow: auto;
+    }
+    & .user_online_dropdownmenu {
+        transform: translate3d(0px, 38px, 0px)!important;
+        top: -5px!important;
+        right: 5px;
+        left: unset!important;
+    }
+    &.navbar {
+        & .dropdown-menu {
+            box-shadow: 0 4px 5px 0 rgba(60,75,100,.14), 0 1px 10px 0 rgba(60,75,100,.12), 0 2px 4px -1px rgba(60,75,100,.2)
+        }
+    } 
+    & .bell-top-anim {animation: abanico 1000ms ease-in-out; transform-origin: top;}
+    & .new-notification {animation: popup 700ms ease-in-out;}
+}
+.app-header.navbar .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    padding-right: 27px;
+    // color: #20a8d8;
+    font-size: 28px;
+}
+.allocation .drawer .drawer-overlay {
+    background-color: rgba(0, 0, 0, 0.4)!important;
+}
+.userNameContainer {
+    // background: white;
+    color: #29363d;
+    padding: 2px 10px;
+    font-size: 14px;
+    border-left: 1px solid gray;
+    margin-left: 20px;
+    padding-left: 20px;
+    // box-shadow: 1px 1px 2px #29363d;
+    // border-radius: 4px;
+    & i {
+        margin-right: 5px;
+        color: $app-color;
+    } 
+}

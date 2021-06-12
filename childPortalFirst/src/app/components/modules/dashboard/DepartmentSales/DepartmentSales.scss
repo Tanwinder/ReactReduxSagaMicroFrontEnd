@@ -1,0 +1,65 @@
+.rocAdmin {
+    & .form_wrapper{
+        width: 100%;
+    }
+    & .poExceptionColValue {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    & .poExceptionFilterCol {
+        z-index: 2;
+    }
+    
+    & .poexception-container{
+        &select{
+            min-width: 80px;
+        }
+    }
+    & .poExceptionCard {
+        & .HeaderGrid {
+            overflow: visible!important;
+            outline: none;
+        }
+        & .ReactVirtualized__Grid__innerScrollContainer {
+            overflow: visible!important;
+            border-bottom: 1px solid #c2cfd6;
+            & .oddRow {
+                background: white;
+            }
+        }
+    }
+    
+    & .col{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    & .poExceptionBtn {
+        width: 100%;
+        align-self: center;
+        text-align: right;
+    }
+    & .custom-update:after{
+        content: ' ';
+        height: 20px;
+        width: 10px;
+        background-color: green;
+        position: absolute;
+        top: -7px;
+        left: -8px;
+        transform: rotate(50deg);
+    }
+    & .disable-save-btn{
+        pointer-events:none;
+        cursor: not-allowed;
+        color: lightgray;
+    }
+    & .enable-save-btn{
+        pointer-events: all;
+        color: gray;
+        cursor: pointer;
+    }
+
+}

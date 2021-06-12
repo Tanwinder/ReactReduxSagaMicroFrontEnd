@@ -1,0 +1,134 @@
+// Here you can add other styles
+body{
+    background-color: white;  
+    font-size: 11px;  
+    // background: url('../public/img/p_big.jpg') transparent center no-repeat;
+}
+.dps-nav-title{
+    font-size: 13px !important;
+}
+.dps-nav-sub-title{
+    font-size: 12px;
+}
+.dps-nav-item{
+    font-size: 12px;
+    padding-left: 1em !important;
+    &.no-sub-nav {
+        padding-left: 0 !important;
+    }
+    background-color: #2e2e2e;
+}
+
+#root > div > div > div > nav > ul > li.nav-item.nav-dropdown.open>a:focus {
+    background-color: #2e2e2e;
+}
+#root > div > div > div > nav > ul > li.nav-item.nav-dropdown>a:focus {
+    background-color: #3a4149;
+}
+
+.nav .open>a, 
+.nav .open>a:focus {
+    background-color: #2e2e2e;
+    border-color: #343b41;  
+}
+.nav .open>a:hover{
+    background-color: #20a8d8 !important;
+}
+
+.orange {
+    &:before {
+        color: #FF9600;
+    }
+}
+.green {
+    &:before {
+        color: rgb(95, 255, 47);
+    }
+}
+.blue {
+    &:before {
+        color: rgb(0, 217, 255);
+    }
+}
+.img-icons {
+    vertical-align: middle;
+    border-style: none;
+    display: inline-block;
+    width: 14px;
+    margin: 0 0.5rem 0;
+    font-size: 14px;
+    text-align: center;
+}
+.main {
+    & .breadcrumb {
+        position: fixed;
+        background: white;
+        z-index: 99;
+        width: 100%;
+    }
+}
+.sidebar {
+    & .nav-dropdown {
+        & .dps-nav-item {
+            & .nav-link {
+                display: flex;
+                align-items: center;
+                & > div {
+                    margin: 0 0.5rem 0 0;
+                }
+            }
+            &.demand {
+                & .nav-link {
+                    margin-top: -5px;
+                & span {
+                    margin-top: 9px;
+                }
+                }
+            }
+        }
+        & .nav-link {
+            &.dps-nav-sub-title {
+                & > div {
+                    margin: 0 0.5rem 0 0;
+                    & svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            & :first-child {
+                display: inline;
+            }
+        }
+    }
+}
+.sidebar-minimized {
+    &.brand-minimized {
+        & .sidebar {
+            & .nav-dropdown {
+                & .nav-link {
+                    &.dps-nav-sub-title {
+                        & > div {
+                            margin: 0 15px;
+                            & svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.IconBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    &:hover {
+        background-color: rgba(60,64,67,0.08);
+    }
+}

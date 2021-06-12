@@ -1,0 +1,245 @@
+$headerBackground: #3a4149;
+$white: #c8ced3;
+$headerColor: #FFC105;
+.gray{
+    background:#2e2e2e!important;
+    color:$white !important;
+    border-color: #6f7985 !important;
+    .breadcrumb,.nav{ //.userNameContainer,
+        background:#3a4149 !important;
+        color:$white !important;
+        border-color: #23282c !important;
+    }
+    &.app-body{
+        background-color: #2e2e2e !important;
+    }
+    &.app-header.navbar {
+        border-radius: 0;
+        & .navbar-brand {
+            background-color: #2e2e2e !important;
+            opacity: .6;
+        }
+    }
+    .nav,footer .app-footer{
+        border-right: 1px solid #23282c !important;
+        background: #3a4149 !important;
+    }
+    .sidebar .sidebar-minimizer {//.dropdown
+        background-color:#3a4149 !important;
+       // opacity: 0.21;
+    }
+    strong,
+    .preferences {
+        .dropdown-content,.online_user_outer,
+        .dropdown-header,.dropdown-item,
+        .dropdown-content a{
+            background:#3a4149!important;
+            color:$white !important;
+            border-color: #23282c !important;
+        }
+    }
+    div.modal-header,div.modal-title,div.modal-content,button span {
+        background:#2e2e2e!important;
+        color:$white !important;
+        border-color: #3a4149 !important;
+    }
+    div.modal-footer {
+        border-top-color: #3a4149 !important;
+    } 
+    div.model{
+        background: none !important;
+    }
+    div.modal-backdrop.show {
+        opacity: 0.5 !important;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+    div {
+        &.dropdown-content, &.dropdown-header, &.online_user_outer {
+            background:$headerBackground!important;
+            color: $white !important;
+            & div, & a, & strong, & button {
+                background:$headerBackground!important;
+                color: $white !important;
+            }
+        }
+    }
+    
+    // nav:first-of-type + .sidebar-minimizer{
+    //     background:#2e2e2e;
+    //     color:$white;
+    //     border-color: #000;
+    // }
+    .preferences .dropdown .style-icon {
+        color:$white !important;
+    }
+    .themeStyles,
+    .userNameContainer,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,
+    .dps-nav-title,
+    .sidebar .nav-link {
+        color: $white !important;
+    }
+
+    .breadcrumb-item {
+        color: $headerColor !important;
+    }
+    
+    .unAuthToolTip {
+        background: $headerBackground!important;
+        &:before {
+            border-right: 10px solid $headerBackground;
+        }
+        &:after {
+            border-right: 10px solid $headerBackground;
+        }
+    }
+    .home-header {
+        background:$headerBackground!important;
+        color: #536c79 !important;
+    }
+}
+.graySF{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title
+    {
+        font-size: 12px !important;
+    }
+    .breadcrumb-item,
+    .themeStyles{
+        font-size: 15px !important;
+    }
+}
+.grayBF{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title
+    {
+        font-size: 14px !important;
+    }
+    .breadcrumb-item,
+    .themeStyles{
+        font-size: 17px !important;
+    }
+}
+.grayNC{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,
+    .dps-nav-title,
+    .breadcrumb-item,
+    .themeStyles{
+        opacity: 0.9 !important;
+    }
+}
+
+.grayLC{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,
+    .dps-nav-title,
+    .breadcrumb-item,
+    .themeStyles{
+        opacity: 0.8 !important;
+    }
+}
+
+// white theme
+.whiteSF{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title
+    {
+        font-size: 12px !important;
+    }
+    .breadcrumb-item,
+    .themeStyles{
+        font-size: 15px !important;
+    }
+}
+.whiteNF{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title
+    {
+        font-size: 13px !important;
+    }
+    .breadcrumb-item,
+    .themeStyles{
+        font-size: 16px !important;
+    }
+}
+.whiteBF{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title
+    {
+        font-size: 14px !important;
+    }
+    .breadcrumb-item,
+    .themeStyles{
+        font-size: 17px !important;
+    }
+}
+.whiteFC{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,
+    .dps-nav-title,
+    .themeStyles{
+        opacity: 1 !important;
+    }
+}
+.whiteNC{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,
+    .dps-nav-title,
+    .breadcrumb-item,
+    .themeStyles{
+        opacity: 0.9 !important;
+    }
+}
+
+.whiteLC{
+    .userNameContainer,
+    .breadcrumb,
+    .nav,
+    .sidebar .sidebar-minimizer,
+    .preferences .dropdown .style-icon,
+    .dps-nav-sub-title,.dps-nav-title,
+    .breadcrumb-item,
+    .themeStyles{
+        opacity: 0.8 !important;
+    }
+}

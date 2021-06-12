@@ -1,0 +1,23 @@
+$fontSize: 1.1rem;
+$boxShadow: 0 0 0px rgba(0, 0, 0, 0.12);
+$borderRadius: 4px;
+$border: 1px solid #c2cfd6;
+.rocAdmin {
+    & .nav-tabs .nav-link:hover {
+        cursor: pointer;
+    }
+    & .Select-control {
+        border-radius: 4px;
+        border: $border;
+        box-shadow: $boxShadow;
+        height: 34px;
+        // border: 1px solid #ebebeb;
+    }
+    & .Select-placeholder {
+        line-height: 32px;
+        color: gray;
+    }
+    & .Select-input {
+        height: 32px;
+    }
+}

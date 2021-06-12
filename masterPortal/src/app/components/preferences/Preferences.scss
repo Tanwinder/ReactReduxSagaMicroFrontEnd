@@ -1,0 +1,354 @@
+$white: #c8ced3;
+$pink: #3a4149;
+.preferences{
+  & .userPreference {
+    
+    &__tooltip {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: 23px;
+      background: $pink;
+      padding: 5px 12px;
+      margin: 5px;
+      font-size: 13px;
+      border-radius: 4px;
+      color: #FFF;
+    }
+    
+    &__tooltip:before,
+    &__tooltip:after {
+      position: absolute;
+      content: '';
+      opacity: 1;
+      transition: all 0.4s ease;
+    }
+    
+    &__tooltip:before {
+      border-width: 10px 8px 0 8px;
+      border-style: solid;
+      border-color: $pink transparent transparent transparent;
+      top: -10px;
+      right: 10px;
+      transform: rotate(180deg);
+    }
+    
+    // &__tooltip:after {
+    //   content: attr(data-tooltip);
+    //   content: '';
+    //   background: $pink;
+    //   width: 160px;
+    //   height: 40px;
+    //   font-size: 13px;
+    //   font-weight: 300;
+    //   top: -75px;
+    //   left: -10px;
+    //   padding: 10px;
+    //   border-radius: 5px;
+    //   letter-spacing: 1px;
+    //   transform: translateY(20px);
+    // }
+    
+    // &__tooltip:hover::before,
+    // &__tooltip:hover::after {
+    //   opacity: 1;
+    //   transform: translateY(-2px);
+    // }
+    
+    @keyframes shake {
+      0% { 
+        transform: rotate(2deg);
+      }
+      50% {
+       transform: rotate(-3deg);
+      }
+      70% {
+        transform: rotate(3deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    &__tooltip:hover {
+      animation: shake 500ms ease-in-out forwards;
+    }
+  }
+  .RowHeightSvg {
+    .rowHeightToolTip {
+      display: none;
+    }
+    &:hover {
+      .rowHeightToolTip {
+        display: block;
+      }
+    }
+  }
+  .rowHeightToolTip {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    background: black;
+    color: white;
+    white-space: pre-wrap;
+    z-index: 1;
+  }
+  span {
+    opacity: 1 !important;
+  }
+  & .colors {
+    height: 20px;
+    width: 20px;
+   // border-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  & .white {
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-left: 15px;
+    &:hover {
+      border:3px solid #337ab7;
+    }
+  }
+  & .black {
+    background: #2e2e2e;
+    border: 2px solid black;
+    margin-left:10px;
+    cursor: pointer;
+    &:hover {
+      border:3px solid #337ab7;
+    }
+  }
+  
+
+  & .dropbtn {
+    background-color:white;
+    color: #29363d;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-size: 16px;
+  }
+  & .dropdown {
+    position: relative;
+    display: inline-block;
+    & .style-icon {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: 18px;
+        color:#000;
+        width: 24px;
+        height: 24px;
+    }
+  }
+  & .circle-picker{
+    width: 178px !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0 0 0 !important;
+    padding-left: 10px;
+  }
+  & .user_online_dropdownmenu {
+    border: none;
+  }
+  & .dropdown-content {
+    width: 200px;
+   // display: none;
+    position: absolute;
+    background-color: #f0f3f5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #c2cfd6;
+    left: -110px;
+    top:5px;
+  }
+  & .dropdown-header {
+    padding: 8px 20px;
+    background: #f0f3f5;
+    border-bottom: 1px solid #c2cfd6;
+    font-size: 14px;
+    strong{
+      color: #000;
+    }
+  }
+  & .dropdown-item .badge {
+    position: absolute;
+    right: 10px;
+    color: #000;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 14px inset;
+    border-radius: 50%;
+    padding: 4px;
+    background: transparent;
+  }
+ & .alignCenter{
+    text-align: center !important;
+  }
+  & .dropdown-content .dropdown-item {
+    color: #e4e7ea;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    clear:both;
+    background: #fff;
+    border-bottom: 1px solid #c2cfd6;
+    &:hover{
+      background:#f0f3f5;
+    }
+    & input[type=range] {
+        display: inline-block;
+        width:65%;
+        margin:0 15px 0 15px;
+        height: 18px;
+    }
+    & .glyphicon-text-height, & .glyphicon-adjust, & .glyphicon-resize-vertical, & .glyphicon-text-background {
+        color:#8d99a0;
+        font-size: 18px;
+
+        &:hover{
+          color:#0199ff;
+        }
+    }
+  }
+}
+// excess height to improve interactive area / accessibility
+$height: 30px;
+$thumb-height: 13px;
+$track-height: 3px;
+
+// colours
+$upper-color: #cfcfcf;
+$lower-color: #0199ff;
+$thumb-color: #0199ff;
+$thumb-hover-color: #55c2ff;
+
+$upper-background: linear-gradient(to bottom, $upper-color, $upper-color) 100% 50% / 100% $track-height no-repeat transparent;
+$lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100% 50% / 100% $track-height no-repeat transparent;
+
+// Webkit cannot style progress so we fake it with a long shadow
+// on the thumb element
+@function webkit-slider-thumb-shadow($i: 1) {
+  $val: #{$i}px 0 0 -#{($thumb-height - $track-height) / 2} #{$upper-color};
+  @if $i == 1 {
+    @for $k from 2 through 1000 {
+      $val: #{$val}, webkit-slider-thumb-shadow($k);
+    }
+  }
+  @return $val;
+}
+
+.e-range {
+  display: block;
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  height: $height;
+  overflow: hidden;
+  //height: 16px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+// Webkit
+.e-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: $height;
+  background: $lower-background;
+}
+
+.e-range::-webkit-slider-thumb {
+  position: relative;
+  appearance: none;
+  height: $thumb-height;
+  width: $thumb-height;
+  background: $thumb-color;
+  border-radius: 100%;
+  border: 0;
+  top: 50%;
+  margin-top: (-$thumb-height/2);
+  box-shadow: 0 0;
+  transition: background-color 150ms;
+}
+
+// Firefox
+.e-range::-moz-range-track,
+.e-range::-moz-range-progress {
+  width: 100%;
+  height: $height;
+  background: $upper-background;
+}
+
+.e-range::-moz-range-progress {
+  background: $lower-background;
+}
+
+.e-range::-moz-range-thumb {
+  appearance: none;
+  margin: 0;
+  height: $thumb-height;
+  width: $thumb-height;
+  background: $thumb-color;
+  border-radius: 100%;
+  border: 0;
+  transition: background-color 150ms;
+}
+
+// Internet Exploder
+.e-range::-ms-track {
+  width: 100%;
+  height: $height;
+  border: 0;
+  // color needed to hide track marks
+  color: transparent;
+  background: transparent;
+}
+
+.e-range::-ms-fill-lower {
+  background: $lower-background;
+}
+
+.e-range::-ms-fill-upper {
+  background: $upper-background;
+}
+
+.e-range::-ms-thumb {
+  appearance: none;
+  height: $thumb-height;
+  width: $thumb-height;
+  background: $thumb-color;
+  border-radius: 100%;
+  border: 0;
+  transition: background-color 150ms;
+  // IE Edge thinks it can support -webkit prefixes
+  top: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.e-range:hover,
+.e-range:focus {
+
+  &::-webkit-slider-thumb {
+    background-color: $thumb-hover-color;
+  }
+  &::-moz-range-thumb {
+    background-color: $thumb-hover-color;
+  }
+  &::-ms-thumb {
+    background-color: $thumb-hover-color;
+  }
+  
+}
+
+.dropdown-content a:hover {background-color: #2f353a;color:#e4e7ea }
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #969090;}
